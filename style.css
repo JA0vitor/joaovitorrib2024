@@ -1,0 +1,424 @@
+@font-face {
+  font-family: 'Paris';
+  src: url('fonts/Belgrad.ttf') format('ttf'),
+      url('fonts/Belgrad.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+  max-width: 900px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+header {
+  height: 100px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.267);
+  z-index: 7;
+  position: relative;
+  display: flex;
+}
+.hg1 {
+  background-color: rgb(31, 30, 30);
+  z-index: 6;
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  opacity: 0.60;
+  margin-top: -100px;
+}
+header img {
+  width: 190px;
+  height: 100px;
+  display: flex;
+}
+.headerescrita {
+  margin-top: 40px;
+  margin-left: 200px;
+}
+.headerescrita a {
+  font-family: 'Paris', arial;
+  text-decoration: none;
+  color: white;
+  margin-left: 7px;
+}
+
+.headerescrita a:hover {
+  color: blanchedalmond;
+}
+
+.icons {
+  font-size: 2.8rem;
+  color: #fff;
+  align-items: center;
+  cursor: pointer;
+  display: none;
+  position: absolute;
+}
+
+/* Parte Inicio Medias */
+
+/*iphone 14 pro max e Galaxy S20ULTRA*/
+@media (max-width: 430px) {
+  .headerescrita {
+    display: none;
+  }
+  .icons {
+    display: flex;
+    margin-left: 350px;
+    margin-top: 25px;
+  }
+  .headerescrita {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: -20px;
+    background-color: black;
+  }
+  .raqueteping img {
+    margin-left: -26vh;
+  }
+  .escritaping {
+    margin-right: 5vh;
+  }
+  .escritaping2 {
+    margin-right: 5vh;
+  }
+  .headerescrita {
+    display: none; /* Escondido por padrão */
+    flex-direction: column;
+    gap: 1rem;
+    margin-right: 50px;
+    margin-top: 10.7vh;
+    padding: 20px;
+    padding-right: 50vh;
+    margin-left: -200px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    overflow: hidden; /* Impede que o conteúdo transborde */
+  }
+  .hugoimg1 {
+    height: 250px;
+  }
+  .hugotxt1 {
+    display: flex;
+    position: relative;
+   margin-top: 9vh !important;
+    z-index: 10; /* Para garantir que esteja acima de outros elementos */
+  }
+  .destaquetxt {
+    display: none;
+  }
+  .destaquetxt1 {
+    margin-left: -53.7vh;
+    top: 55vh;
+  }
+  .destaquehugo {
+    top: -80vh !important;
+    left: -0.5vh;
+    position: relative !important;
+    bottom: 50vh !important;
+  }
+  .destaquehugo img {
+    width: 400px !important;
+  }
+  h1 {
+    margin-left: -10px !important;
+  }
+  h2 {
+    justify-content: center !important;
+  }
+  .medalhas1 {
+    justify-content: center !important;
+  }
+  ul li {
+    margin-right: 10vh;
+  }
+  .contatoconfig {
+    margin-left: 10vh !important;
+  }
+  .Titulo3 {
+    right: 25vh !important;
+  }
+  footer{
+    width: 412px !important;
+  }
+ .hugotxta{
+  margin-top: -40vh !important;
+ }
+ .hugotxta2{
+  margin-top: -18vh !important;
+ }
+ .tabela{
+  top: -70px;
+ }
+ .tabela1{
+  top: -70px;
+ }
+}
+
+@media (min-width: 1025px) {
+  .headerescrita {
+    display: block;
+  }
+}
+
+@media (min-width: 431px) {
+  .destaquetxt1 {
+    display: none;
+  }
+  .destaquehugo {
+    right: 72vh;
+  }
+}
+/* Parte Fim Medias */
+
+.raqueteping img {
+  width: 200px;
+  height: 200px;
+}
+.raqueteping {
+  position: relative;
+  margin-top: -78vh;
+  z-index: 6;
+  margin-left: 38vh;
+}
+.escritaping {
+  position: relative; /* Para que o z-index funcione */
+  z-index: 11;
+  display: flex; /* Usar flex no contêiner */
+  font-family: 'Paris', arial;
+  color: rgb(12, 12, 11);
+  font-size: 3.5vh;
+  justify-content: center;
+  margin-left: 29px;
+}
+.escritaping2 {
+  position: relative; /* Para que o z-index funcione */
+  z-index: 11;
+  display: flex; /* Usar flex no contêiner */
+  font-family: 'Paris', arial;
+  color: rgb(116, 23, 23);
+  font-size: 3.5vh;
+  justify-content: center;
+  margin-left: 29px;
+}
+
+.hugoimg1 {
+  z-index: 6;
+  position: relative;
+  display: flex;
+  margin-top: -85vh;
+  margin-left: 1vh;
+}
+.hugoimg1 img {
+  width: 400px;
+  border: solid #000;
+  border-radius: 5%;
+  height: 300px;
+}
+.hugotxt1 {
+  font-family: "Paris", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  text-transform: uppercase;
+  color: rgb(168, 159, 107);
+  margin-left: 20px;
+  margin-top: 30px;
+  position: relative; /* Alterado para relative */
+  z-index: 10; /* Para garantir que esteja acima de outros elementos */
+}
+.destaquehugo {
+  bottom: 40vh;
+  display: flex;
+  position: absolute;
+  z-index: 6;
+}
+.destaquehugo img {
+  width: 500px;
+  border: solid blanchedalmond;
+}
+.destaquetxt {
+  position: absolute;
+  bottom: 15vh;
+  z-index: 6;
+  font-family: 'Paris', sans-serif;
+  text-transform: uppercase;
+  color: rgb(201, 191, 134);
+  left: 460px;
+}
+.destaquetxt1 {
+  position: absolute;
+  bottom: 15vh;
+  z-index: 6;
+  font-family: 'Paris', sans-serif;
+  text-transform: uppercase;
+  color: rgb(201, 191, 134);
+  left: 500px;
+}
+
+.tabela {
+  margin-top: -80vh;
+  z-index: 6;
+  position: relative;
+  text-transform: uppercase;
+  font-family: 'Paris';
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  margin-left: 10vh;
+}
+
+table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+thead {
+  background-color: #2980b9;
+  color: white;
+}
+
+p {
+  font-size: 16px;
+  color: #34495e;
+  margin-top: 20px;
+}
+.tabela1 {
+  z-index: 6;
+  position: relative;
+  text-transform: uppercase;
+  font-family: 'Paris';
+}
+
+h1 {
+  color: #ad9767;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #7c5939;
+  margin-top: 20px;
+  font-size: 1.5em;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 40px;
+}
+
+.medalhas1 {
+  z-index: 6;
+  margin-top: -90vh;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Titulo3 {
+  font-family: 'Paris', sans-serif;
+  text-transform: uppercase;
+  color: blanchedalmond;
+  position: relative;
+  z-index: 6;
+  margin-top: -80vh;
+  margin-left: 45vh !important;
+}
+.contatoconfig {
+  font-family: 'Paris', sans-serif;
+  text-transform: uppercase;
+  color: blanchedalmond;
+  position: relative;
+  z-index: 6;
+  margin-left: 45vh;
+  margin-top: 4vh;
+}
+.titulo2 {
+  margin-left: 5vh;
+}
+textarea {
+  resize: none;
+  margin-left: -10vh;
+}
+footer {
+  width: 100%; /* Ocupa toda a largura da tela */
+  background-color: rgba(0, 0, 0, 0.8); /* Cor de fundo */
+  color: blanchedalmond; /* Cor do texto */
+  display: flex; /* Flexbox para alinhar conteúdo */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  padding: 20px; /* Espaçamento interno */
+  position: relative; /* Para que o footer siga o conteúdo */
+  z-index: 6;
+  text-transform: uppercase;
+  font-family: 'Paris', sans-serif;
+}
+/* Estilo adicional para garantir que o footer fique no fundo da tela */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Garante que o body ocupe 100% da altura da tela */
+}
+
+main {
+  flex: 1; /* Garante que o conteúdo principal ocupe o espaço disponível */
+}
+
+footer {
+  flex-shrink: 0; /* Impede o footer de encolher */
+}
+
+/* Footer responsivo para telas menores */
+@media (max-width: 430px) {
+  footer {
+    flex-direction: column; /* Organiza o conteúdo em coluna no celular */
+    padding: 15px;
+    text-align: center; /* Alinha o texto no centro */
+  }
+}
+
+/* Estilos do Footer */
+footer {
+  width: 860px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: blanchedalmond;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  z-index: 10;
+  text-transform: uppercase;
+  font-family: 'Paris', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.hugotxta{
+  margin-top: -14vh;
+}
+.kkconf{
+  margin-top: -13vh;
+}
+.raqueteping1{
+  margin-top: -54vh;
+}

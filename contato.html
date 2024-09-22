@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <title>Olimpíadas - Tênis de Mesa</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Trabalho acadêmico de PW1">
+  <meta name="keywords" content="Trabalho, Olimpíadas, Hugo Calderano, Ping Pong">
+  <meta name="author" content="Aluno João Vitor Rib.">
+  <link rel="icon" type="image/png" href="img/mascote.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="jsscript.js" defer></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script language="javascript" type="text/javascript">
+    function validar() {
+        var nome = document.form1.cod.value;
+        var email = document.form1.nimo.value;
+        var dataCadastro = document.form1.dataCadastro.value;
+        var desc = document.form1.desc.value;
+        var comentario = document.form1.comentário.value;
+
+        // Validação de Nome
+        if (nome == "") {
+            alert("Por favor, preencha o campo Nome.");
+            document.form1.cod.focus();
+            return false;
+        }
+
+        // Validação de Email
+        if (email == "") {
+            alert("Por favor, preencha o campo Email.");
+            document.form1.nimo.focus();
+            return false;
+        } else if (!/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/.test(email)) {
+            alert("Por favor, insira um endereço de email válido.");
+            document.form1.nimo.focus();
+            return false;
+        }
+
+        // Validação de Data
+        if (dataCadastro == "") {
+            alert("Por favor, selecione a Data.");
+            document.form1.dataCadastro.focus();
+            return false;
+        }
+
+        // Validação de Descrição
+        if (desc == "") {
+            alert("Por favor, selecione uma Nota.");
+            document.form1.desc.focus();
+            return false;
+        }
+
+        return true;
+    }
+  </script>
+</head>
+<body>
+  
+  <header>
+    <img src="img/paris-2024-e1721312142139-removebg-preview.png">
+   <div class="headerescrita">
+    <a href="index.html">HOME</a>
+    <a href="sobre.html">SOBRE</a>
+    <a href="destaque.html">DESTAQUE</a>
+    <a href="desafios.html">DESAFIOS</a>
+    <a href="medalhas.html">MEDALHAS</a>
+    <a href="contato.html">CONTATO</a>
+   </div>
+
+   <label for="" class="icons">
+    <i class='bx bx-menu'></i>
+   </label>
+  </header>
+  <div class="backgroundab"></div>
+    <div class="hg1"></div>
+    <div class="cell"></div>
+    <div class="bgdown"></div>
+    <div class="Titulo3">
+        Nos Deixe Um FeedBack
+    </div>
+   
+   <div class="contatoconfig">
+    <form name="form1" action="confirmacao.html" method="get" onsubmit="return validar()">
+        Nome: <input name="cod" type="text"><br><br>
+        Email: <input name="nimo" type="text"><br><br>
+        Data: <input id="data" name="dataCadastro" tabindex="3" type="date" pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}$" ><br><br>
+
+        Avaliação:
+        <select name="desc">
+            <option value="">Selecione</option>
+            <option value="★">★</option>
+            <option value="★★">★★</option>
+            <option value="★★★">★★★</option>
+            <option value="★★★★">★★★★</option>
+            <option value="★★★★★">★★★★★</option>
+            <option value="★★★★★+">★★★★★+</option>
+        </select>
+        <br><br>
+       <div class="titulo2"> OBSERVAÇÕES:<br></div>   
+           <textarea cols="50" rows="20" name="comentário"></textarea><br>
+     <input type="submit" value="ENVIAR">
+     <input type="reset" value="LIMPAR"><br>
+     </form>
+  </div>
+   <br>
+  <footer>
+    <h6><center>Joao Vitor Ribeiro - 2024 &copy<br>
+    trabalho acadêmico sem fins lucrativos</center></h6>
+  </footer>
+</body>
+</html>
